@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /bootstrapWebsite/assets/
+Disallow: /bootstrapWebsite/Acteurs/
+Dissallow:  /filmWebsite/
+
+Sitemap: http://www.movieplanet.pekict.nl/bootstrapWebsite/assets/sitemap.xml
+ 

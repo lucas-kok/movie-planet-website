@@ -1,0 +1,523 @@
+/* Global CSS */
+
+body,
+html {
+    background-color: #fffafa;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+/* Focus colors */
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.form-control:focus,
+#inputSearch:focus,
+.uneditable-input:focus,
+a.btn.btn-primary:focus {
+    border-color: rgba(76, 26, 119, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(76, 26, 119, 0.6);
+    outline: 0 none;
+}
+
+
+/* NavBar */
+
+.navbar.navbar-expand-lg.navbar-dark.fixed-top.bg-dark {
+    background-color: #4c1a77 !important;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+
+/* Nav-Items*/
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fffafa;
+    font-size: 1.15rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, .55);
+}
+
+
+/* Dropdown */
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #4C1A77;
+}
+
+.dropdown-item.active:hover {
+    color: #fffaff !important;
+    background-color: rgba(76, 26, 119, 0.75)
+}
+
+ul.dropdown-menu.show {
+    border: 2px solid #181A18;
+}
+
+
+/* Search */
+
+.form-control {
+    background-color: #fffafa;
+    border: 2px solid #4C4452;
+    -webkit-tap-highlight-color: #4C4452;
+}
+
+button.btn.btn-outline-success {
+    background-color: #fffafa;
+    color: #181A18;
+    border: 2px solid #4C4452;
+}
+
+button.btn.btn-outline-success:hover {
+    background-color: #4C4452;
+    color: #fffafa;
+    transition-duration: 0.3s;
+}
+
+
+/* Links */
+
+a {
+    color: #4c1a77;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+a:hover:not(.navbar-dark .navbar-nav .nav-link, .navbar-brand) {
+    color: #4c1a77;
+}
+
+
+/* Primary Button */
+
+.btn.btn-primary {
+    background: #4c1a77;
+    border: 2px solid #4c1a77;
+    color: #fffafa;
+}
+
+
+/* Animation only for desktop since hover on Mobile is a bit glitchy */
+
+@media only screen and (min-width: 992px) {
+    .btn.btn-primary {
+        -webkit-transition-duration: 0.5s;
+        -webkit-box-shadow: 0px 0px 0 0 #fffafa inset, 0px 0px 0 0 #fffafa inset;
+    }
+    .btn.btn-primary:hover {
+        color: #4c1a77;
+        -webkit-box-shadow: 0px 0px 0 0 transparent inset, 200px 0px 0 0 #fffafa inset;
+    }
+}
+
+
+/* For other devices */
+
+@media only screen and (max-width: 992px) {
+    .btn.btn-primary:hover {
+        color: #fffaff !important;
+        background-color: rgba(76, 26, 119, 0.75)
+    }
+}
+
+
+/* Secondary Button */
+
+a.btn.btn-outline-secondary.btn-lg.px-4 {
+    background-color: #fffafa;
+    border: 2px solid #4C4452;
+    color: #181A18;
+    transition-duration: 0.3s;
+}
+
+a.btn.btn-outline-secondary.btn-lg.px-4:hover {
+    background-color: #4C4452;
+    color: #fffafa;
+    transition-duration: 0.3s;
+}
+
+.btn {
+    font-weight: 400;
+    padding: .5rem 2rem;
+}
+
+
+/* Cards */
+
+.card-img-top {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #fffafa;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card a.btn.btn-primary.mt-2,
+a.btn.btn-primary.mt-3 {
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+svg {
+    fill: #181A18;
+    transition-duration: 0.3s;
+}
+
+ul.nav.col-md-4.justify-content-end.list-unstyled.d-flex svg:hover {
+    fill: #4C1A77;
+    transition-duration: 0.3s;
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+/* Index */
+
+#frontpage-movies {
+    margin-top: 100px;
+}
+
+.col-lg-6.mx-auto {
+    margin-bottom: 100px;
+}
+
+.carousel-inner img {
+    width: 700px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container.cards {
+    margin-top: 125px;
+}
+
+.card-title.lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+/* Over */
+
+svg.bi.bi-envelope-fill {
+    margin-bottom: 3px;
+    fill: white;
+    transition: 0.5s;
+}
+
+button.btn.btn-primary.btn-lg.px-4.me-md-2.mt-2:hover>svg.bi.bi-envelope-fill {
+    fill: #4C1A77;
+    transition: 0.5s;
+}
+
+
+/* Project Card */
+
+.card.card-cover.h-100.overflow-hidden.text-white.bg-dark.rounded-5.shadow-lg {
+    height: 350px !important;
+    background-size: cover;
+    background-position: center;
+}
+
+h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold {
+    transition-duration: 0.3s;
+}
+
+h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold:hover {
+    margin-bottom: 2rem !important;
+    transition-duration: 0.3s;
+}
+
+.row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5 a {
+    text-decoration: none !important;
+}
+
+
+/* Contact Form About-Page */
+
+.modal-content {
+    background-color: #fffafa;
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+/* FilmPage */
+
+.filmHero.px-4.py-5.my-5.text-center {
+    height: 100vh;
+}
+
+.filmPage h1.display-5.fw-bold {
+    font-size: 3.5rem;
+    margin-top: 35vh;
+}
+
+.filmPage h1.display-5.fw-bold {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #181A18;
+}
+
+
+/* Film Eigenschappen*/
+
+.filmPage .pt-5.lead {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+/* Film Omschrijving */
+
+.container.text-center.omschrijving {
+    margin-top: -100px;
+    margin-bottom: 125px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.container.text-center.omschrijving p {
+    font-size: 1.3rem;
+}
+
+.container.mt-5.text-center.cast .card {
+    border: none;
+}
+
+.filmPage {
+    color: #fffafa;
+}
+
+.filmPage .container.mt-5.text-center .card {
+    color: #181A18;
+}
+
+#castRow {
+    margin-bottom: 75px;
+}
+
+
+/* Breadcrumb */
+
+.filmPage li.breadcrumb-item {
+    color: #bbbb !important;
+}
+
+.filmPage .breadcrumb-item+.breadcrumb-item::before {
+    color: #bbb !important;
+}
+
+.filmPage svg {
+    fill: #fffafa;
+}
+
+
+/* Venom */
+
+#venom .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #181A18 80%), url(../img/venom/venombanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#venom {
+    background-color: #181A18;
+}
+
+#venom .container.mt-5.text-center .card {
+    color: #181A18;
+}
+
+
+/* Interstellar */
+
+#interstellar {
+    color: #181A18;
+    background-color: #fffafa;
+}
+
+#interstellar h1.display-5.fw-bold {
+    color: #fffafa;
+}
+
+#interstellar .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #fffafa 80%), url(../img/interstellar/interstelllarbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#interstellar svg {
+    fill: #181818;
+}
+
+
+/* The Dark Knight */
+
+#theDarkKnight {
+    background-color: #104160;
+}
+
+#theDarkKnight .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #104160 80%), url(../img/thedarkknight/thedarkknightbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Saving Private Ryan*/
+
+#savingPrivateRyan {
+    background-color: #BAB2A4;
+    color: #181A18;
+}
+
+#savingPrivateRyan .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #BAB2A4 80%), url(../img/savingprivateryan/savingprivateryanbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#savingPrivateRyan h1.display-5.fw-bold.mb-3 {
+    color: #fffaff;
+}
+
+#savingPrivateRyan svg {
+    fill: #181818;
+}
+
+
+/* Joker */
+
+#joker {
+    background-color: #050E03;
+}
+
+#joker .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #050E03 80%), url(../img/joker/jokerbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Intouchables */
+
+#intouchables {
+    background-color: #040404;
+}
+
+#intouchables .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #040404 80%), url(../img/intouchable/intouchablesbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Godzilla vs. Kong */
+
+#godzillavsKong {
+    background-color: #39795E;
+}
+
+#godzillavsKong .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #39795E 80%), url(../img/godzillavskong/godzillavskongbanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Spectre */
+
+#spectre {
+    background-color: #011725;
+}
+
+#spectre .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #011725 80%), url(../img/spectre/spectrebanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* A Quit Place Part II */
+
+#aQuitPlacePartII {
+    background-color: #2D0F0D;
+}
+
+#aQuitPlacePartII .filmHero.px-4.py-5.my-5.text-center {
+    background: linear-gradient(to bottom, transparent 45%, #2D0F0D 80%), url(../img/aquietplacepartii/aquietplacepartiibanner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+/* Acteur */
+
+h2.mb-5.lead {
+    font-weight: 500;
+}
+
+img#acteurImage {
+    width: 60%;
+    object-fit: cover;
+    box-shadow: rgb(76, 26, 119, 0.4) 5px 5px, rgb(76, 26, 119, 0.3) 10px 10px, rgb(76, 26, 119, 0.2) 15px 15px, rgb(76, 26, 119, 0.1) 20px 20px, rgb(76, 26, 119, 0.05) 25px 25px !important;
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+/* Film Toevoegen */
+
+#movieIcon {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    button.w-100.btn.btn-lg.btn-primary:hover {
+        -webkit-box-shadow: 0px 0px 0 0 transparent inset, 400px 0px 0 0 #fffafa inset;
+    }
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #fffafa !important;
+    box-shadow: rgb(76, 26, 119, 0.4) 5px 5px, rgb(76, 26, 119, 0.3) 10px 10px, rgb(76, 26, 119, 0.2) 15px 15px, rgb(76, 26, 119, 0.1) 20px 20px, rgb(76, 26, 119, 0.05) 25px 25px;
+}
